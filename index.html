@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Site Imobiliária</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<body class="fundo-total">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><i class="fas fa-home"></i></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -26,71 +27,129 @@
                         <a class="nav-link" href="#">Compra/Venda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Aluguel</a>
+                        <a class="nav-link" href="#aluguel">Aluguel</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Quem Somos</a>
                     </li>
                 </ul>
+                <span>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Procure o que desejar"
+                            aria-label="Search">
+                        <button class="botao-search" type="submit">Boraaa!</button>
+                    </form>
+                </span>
             </div>
         </div>
     </nav>
     <br>
-    <h1>Imobiliária Procura Que Acha, Encontra Aqui</h1>
+    <h1 class="titulo-imob">Imobiliária Procura Que Acha, Encontra Aqui</h1>
     <br>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-            <div class="card h-100">
-                <img src="images/mansão-piscina.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Mansão com piscina</h5>
-                    <p class="card-text">Mansão com piscina do lado da casa do menino Neymar.</p>
+    <section>
+        <div class="container">
+            <div class="row row-cols-3">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/mansão-piscina.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mansão com piscina</h5>
+                            <p class="card-text">Mansão com piscina do lado da casa do menino Neymar.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/casa-do-lago.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Casa do lago</h5>
+                            <p class="card-text">Casa com piscina próxima ao lago.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/casas-modernas4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mansão moderna</h5>
+                            <p class="card-text">Mansão nova e moderna cheia de frufru.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/mansa-com-lago.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mansão moderna</h5>
+                            <p class="card-text">Mansão nova e moderna com lago natural.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/casa piscina raia.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mansão moderna</h5>
+                            <p class="card-text">Mansão nova e moderna com piscina com raia.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/mansao piscina infinita.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mansão moderna</h5>
+                            <p class="card-text">Mansão nova e moderna com piscina borda infinita.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+    </section>
+    <br>
+    <br>
+    <section>
+        <div class="container-sm">
+            <div class="col">
+                <div class="card ">
+                    <img src="images/vendasss.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">COMPRA E VENDA</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's
+                            content.</p>
+                        <a href="#aluguel" class="btn btn-primary">COMPRE/VENDA SEU IMÓVEL</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card h-100">
-                <img src="images/casa-do-lago.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Casa do lago</h5>
-                    <p class="card-text">Casa com piscina próxima ao lago.</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card h-100">
-                <img src="images/casas-modernas4.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Mansão moderna</h5>
-                    <p class="card-text">Mansão nova e moderna cheia de frufru.</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
     <br>
-    <br>
-    <div class="container-sm">
-        <div class="col 6">
-            <div class="card ">
-                <img src="images/vendasss.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">COMPRA E VENDA</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's
-                        content.</p>
-                    <a href="#" class="btn btn-primary">COMPRE/VENDA SEU IMÓVEL</a>
-                </div>
-            </div>
-            <div class="col 6">
+    <section>
+        <div class="container-sm">
+            <div class="col">
                 <div class="card">
                     <img src="images/aluguel.png" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -102,11 +161,10 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+    </section>
     <br>
     <br>
-    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <!-- <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -160,8 +218,19 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
+    </div> -->
+    <section>
+        <div class="container-footer">
+            <div class="row align-items-center">
+                <footer class="rodape-imob">Copyright © Eu que fiz, tá ruim mas tá bom </footer><!-- 
+                <a class="btn btn-white btn-social mx-2" target="_blank"
+                    href="https://www.linkedin.com/in/felipeguths/"></a>
+                <a class="btn btn-blue btn-social mx-2" target="_blank"
+                    href="https://www.instagram.com/felipeguths"></a> -->
+            </div>
+    </section>
     </div>
-    <button class="btn btn-primary" style="">botão</button>
+    </div>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 
