@@ -1,0 +1,21 @@
+.fundo-total {
+    background: rgb(123,137,175);
+    background: linear-gradient(90deg, rgba(123,137,175,1) 0%, rgba(54,68,111,1) 52%, rgba(110,192,186,1) 97%);
+}
+
+.titulo-imob {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 50px;
+}
+
+.botao-search{
+    color: black;
+    background: rgba(110,192,186,1);
+}
+
+.rodape-imob{
+    color: whitesmoke;
+    text-align: center;
+    padding: 5px;
+}
