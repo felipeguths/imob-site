@@ -14,8 +14,36 @@
     background: rgba(110,192,186,1);
 }
 
+.btn-botao-card{
+    color: antiquewhite;
+}
+
 .rodape-imob{
     color: whitesmoke;
     text-align: center;
     padding: 5px;
+}
+.card{
+    margin-top: 10px;
+}
+
+.card-body{
+    background: linear-gradient(90deg, rgba(123,137,175,1) 0%, rgba(54,68,111,1) 52%, rgba(110,192,186,1) 97%);
+}
+
+.card-title{
+    color: white;
+}
+
+.card-text{
+    color: aliceblue;
+}
+
+.card-footer{
+    background: linear-gradient(90deg, rgba(123,137,175,1) 0%, rgba(54,68,111,1) 52%, rgba(110,192,186,1) 97%);
+    text-align: center;
+}
+
+.update-text{
+    color: white;
 }
