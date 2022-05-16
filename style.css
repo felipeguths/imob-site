@@ -4,7 +4,7 @@
 }
 
 .titulo-imob {
-    color: whitesmoke;
+    color: white;
     text-align: center;
     font-size: 50px;
 }
@@ -13,37 +13,38 @@
     color: black;
     background: rgba(110,192,186,1);
 }
-
-.btn-botao-card{
-    color: antiquewhite;
-}
-
 .rodape-imob{
-    color: whitesmoke;
+    color: white;
     text-align: center;
     padding: 5px;
 }
 .card{
     margin-top: 10px;
-}
-
-.card-body{
-    background: linear-gradient(90deg, rgba(123,137,175,1) 0%, rgba(54,68,111,1) 52%, rgba(110,192,186,1) 97%);
-}
-
-.card-title{
+    background-color: transparent;
     color: white;
-}
-
-.card-text{
-    color: aliceblue;
+    border: solid 2px;
 }
 
 .card-footer{
-    background: linear-gradient(90deg, rgba(123,137,175,1) 0%, rgba(54,68,111,1) 52%, rgba(110,192,186,1) 97%);
     text-align: center;
 }
 
-.update-text{
+.footer{
+    color: white !important;
+}
+
+.footer a{
     color: white;
+}
+.carousel-item > img {
+    width: auto;
+    height: 700px; 
+}
+.card-img{
+    width: auto;
+    height: 900px; 
+}
+
+.form-select{
+    
 }
