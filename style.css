@@ -4,7 +4,7 @@
 }
 
 .titulo-imob {
-    color: whitesmoke;
+    color: white;
     text-align: center;
     font-size: 50px;
 }
@@ -13,9 +13,38 @@
     color: black;
     background: rgba(110,192,186,1);
 }
-
 .rodape-imob{
-    color: whitesmoke;
+    color: white;
     text-align: center;
     padding: 5px;
+}
+.card{
+    margin-top: 10px;
+    background-color: transparent;
+    color: white;
+    border: solid 2px;
+}
+
+.card-footer{
+    text-align: center;
+}
+
+.footer{
+    color: white !important;
+}
+
+.footer a{
+    color: white;
+}
+.carousel-item > img {
+    width: auto;
+    height: 700px; 
+}
+.card-img{
+    width: auto;
+    height: 900px; 
+}
+
+.form-select{
+    
 }
