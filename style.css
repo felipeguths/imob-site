@@ -1,50 +1,65 @@
 .fundo-total {
-    background: rgb(123,137,175);
-    background: linear-gradient(90deg, rgba(123,137,175,1) 0%, rgba(54,68,111,1) 52%, rgba(110,192,186,1) 97%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(182, 179, 179) 50%, rgba(0, 0, 0, 1) 100%);
 }
 
 .titulo-imob {
     color: white;
     text-align: center;
+    text-shadow: 5px 2px black;
     font-size: 50px;
 }
 
-.botao-search{
+.botao-search {
     color: black;
-    background: rgba(110,192,186,1);
+    background: rgb(180, 187, 186);
+    border-radius: 5px;
 }
-.rodape-imob{
-    color: white;
-    text-align: center;
-    padding: 5px;
-}
-.card{
+
+.card {
     margin-top: 10px;
     background-color: transparent;
     color: white;
-    border: solid 2px;
+    border: solid 5px rgb(180, 187, 186);
 }
 
-.card-footer{
+.card-footer {
     text-align: center;
 }
 
-.footer{
+.footer {
     color: white !important;
 }
 
-.footer a{
+.footer a {
     color: white;
 }
-.carousel-item > img {
+
+.carousel-item>img {
     width: auto;
-    height: 700px; 
-}
-.card-img{
-    width: auto;
-    height: 900px; 
+    height: 700px;
 }
 
-.form-select{
-    
+.card-img {
+    width: auto;
+    height: 900px;
+}
+
+#lb-comprar {
+    color: white;
+    margin: 5px;
+}
+
+.card-img-comprar{
+    border: solid 5px rgb(180, 187, 186);
+    width: auto;
+}
+
+#lista-de-imoveis{
+    color: white;
+    font-size: larger;
+}
+
+#headers-tabela{
+    color: rgb(231, 242, 240);
 }

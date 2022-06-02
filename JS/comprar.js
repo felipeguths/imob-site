@@ -1,100 +1,388 @@
-const listaDeImoveisParaComprarComFiltro = []
-
-
-const listaDeImoveisParaComprar = [
+const listaDeImoveis = [
     {
-        id: 1,
+        titulo: "Apto ",
+        modelo: "VENDER",
+        tipo: "APTO",
+        valor: 2525.5,
+        metragem: 80,
+        ehPertoDeMetro: true,
+        temPiscina: true,
+        temChurrasqueira: true,
+        temRuaSilenciosa: true,
+        temAcademia: true,
+        temSalaoDeJogos: true,
+        temPlayground: true,
+        aceitaPET: true,
+        numeroDeVagas: 3,
+        numeroDeQuartos: 3,
+        numeroDeBanheiros: 2,
         cidade: "São Paulo",
-        bairro: "azul",
-        tipo: "casa",
-        quantidadeQuartos: 2,
-        metragem: 70,
-        imagem: "images/mansão-piscina.jpg"
+        estado: "SP",
+        bairro: "Preto",
+        descricao: "descricao tal"
     },
     {
-        id: 2,
+        titulo: "Casa de rico",
+        modelo: "COMPRAR",
+        tipo: "CASA",
+        valor: 352525.5,
+        metragem: 160,
+        ehPertoDeMetro: true,
+        temPiscina: false,
+        temChurrasqueira: true,
+        temRuaSilenciosa: true,
+        temAcademia: false,
+        temSalaoDeJogos: false,
+        temPlayground: true,
+        aceitaPET: true,
+        numeroDeVagas: 3,
+        numeroDeQuartos: 4,
+        numeroDeBanheiros: 4,
         cidade: "São Paulo",
-        bairro: "preto",
-        tipo: "apto",
-        quantidadeQuartos: 3,
+        estado: "SP",
+        bairro: "Azul",
+        descricao: "descricao tal 2"
+    },
+    {
+        titulo: "Casa de campo",
+        modelo: "COMPRAR",
+        tipo: "CASA",
+        valor: 122525.5,
         metragem: 110,
-        imagem: "images/mansão-piscina.jpg"
-    },
-    {
-        id: 3,
+        ehPertoDeMetro: false,
+        temPiscina: true,
+        temChurrasqueira: true,
+        temRuaSilenciosa: true,
+        temAcademia: false,
+        temSalaoDeJogos: false,
+        temPlayground: false,
+        aceitaPET: true,
+        numeroDeVagas: 3,
+        numeroDeQuartos: 3,
+        numeroDeBanheiros: 4,
         cidade: "Santos",
-        bairro: "preto",
-        tipo: "studio",
-        quantidadeQuartos: 1,
-        metragem: 35,
-        imagem: "images/mansão-piscina.jpg"
+        estado: "SP",
+        bairro: "Verde",
+        descricao: "descricao da casa de campo"
+
     },
     {
-        id: 4,
+        titulo: "Mansão do Neyjr",
+        modelo: "COMPRAR",
+        tipo: "CASA",
+        valor: 2352525.5,
+        metragem: 260,
+        ehPertoDeMetro: false,
+        temPiscina: true,
+        temChurrasqueira: true,
+        temRuaSilenciosa: true,
+        temAcademia: true,
+        temSalaoDeJogos: true,
+        temPlayground: true,
+        aceitaPET: true,
+        numeroDeVagas: 4,
+        numeroDeQuartos: 5,
+        numeroDeBanheiros: 6,
         cidade: "São Paulo",
-        bairro: "azul",
-        tipo: "casa",
-        quantidadeQuartos: 4,
-        metragem: 135,
-        imagem: "images/mansão-piscina.jpg"
+        estado: "SP",
+        bairro: "Preto",
+        descricao: "descricao da mansão do menino Ney"
     },
     {
-        id: 5,
+        titulo: "Apartamento pequeno",
+        modelo: "VENDER",
+        tipo: "APTO",
+        valor: 52525.5,
+        metragem: 40,
+        ehPertoDeMetro: true,
+        temPiscina: false,
+        temChurrasqueira: false,
+        temRuaSilenciosa: true,
+        temAcademia: true,
+        temSalaoDeJogos: true,
+        temPlayground: true,
+        aceitaPET: true,
+        numeroDeVagas: 0,
+        numeroDeQuartos: 1,
+        numeroDeBanheiros: 1,
+        cidade: "São Paulo",
+        estado: "SP",
+        bairro: "Azul",
+        descricao: "descricao Studio pequeno em condominio"
+    },
+    {
+        titulo: "Mansão super",
+        modelo: "COMPRAR",
+        tipo: "CASA",
+        valor: 9352525.5,
+        metragem: 460,
+        ehPertoDeMetro: false,
+        temPiscina: true,
+        temChurrasqueira: true,
+        temRuaSilenciosa: true,
+        temAcademia: true,
+        temSalaoDeJogos: true,
+        temPlayground: true,
+        aceitaPET: true,
+        numeroDeVagas: 5,
+        numeroDeQuartos: 5,
+        numeroDeBanheiros: 7,
+        cidade: "São Paulo",
+        estado: "SP",
+        bairro: "Azul",
+        descricao: "descricao tal 2"
+    },
+    {
+        titulo: "Casarão",
+        modelo: "VENDER",
+        tipo: "CASA",
+        valor: 8525.5,
+        metragem: 160,
+        ehPertoDeMetro: false,
+        temPiscina: true,
+        temChurrasqueira: true,
+        temRuaSilenciosa: false,
+        temAcademia: false,
+        temSalaoDeJogos: false,
+        temPlayground: true,
+        aceitaPET: true,
+        numeroDeVagas: 2,
+        numeroDeQuartos: 3,
+        numeroDeBanheiros: 3,
+        cidade: "Barueri",
+        estado: "SP",
+        bairro: "Branco",
+        descricao: "descricao tal 2"
+    },
+    {
+        titulo: "Imovel tal 2",
+        modelo: "COMPRAR",
+        tipo: "APTO",
+        valor: 352525.5,
+        metragem: 160,
+        ehPertoDeMetro: true,
+        temPiscina: false,
+        temChurrasqueira: false,
+        temRuaSilenciosa: true,
+        temAcademia: false,
+        temSalaoDeJogos: false,
+        temPlayground: true,
+        aceitaPET: true,
+        numeroDeVagas: 3,
+        numeroDeQuartos: 4,
+        numeroDeBanheiros: 4,
+        cidade: "São Paulo",
+        estado: "SP",
+        bairro: "Azul",
+        descricao: "descricao tal 2"
+    },
+    {
+        titulo: "Imovel santos",
+        modelo: "VENDER",
+        tipo: "CASA",
+        valor: 1352525.5,
+        metragem: 560,
+        ehPertoDeMetro: true,
+        temPiscina: false,
+        temChurrasqueira: false,
+        temRuaSilenciosa: true,
+        temAcademia: false,
+        temSalaoDeJogos: false,
+        temPlayground: true,
+        aceitaPET: true,
+        numeroDeVagas: 5,
+        numeroDeQuartos: 7,
+        numeroDeBanheiros: 6,
+        cidade: "Santos",
+        estado: "SP",
+        bairro: "Branco",
+        descricao: "descricao tal 2"
+    },
+    {
+        titulo: "Imovel santo andré",
+        modelo: "COMPRAR",
+        tipo: "CASA",
+        valor: 352525.5,
+        metragem: 160,
+        ehPertoDeMetro: true,
+        temPiscina: false,
+        temChurrasqueira: false,
+        temRuaSilenciosa: true,
+        temAcademia: false,
+        temSalaoDeJogos: false,
+        temPlayground: true,
+        aceitaPET: true,
+        numeroDeVagas: 3,
+        numeroDeQuartos: 4,
+        numeroDeBanheiros: 4,
+        cidade: "Santo André",
+        estado: "SP",
+        bairro: "Ciclano",
+        descricao: "descricao tal 2"
+    },
+    {
+        titulo: "Imovel osasco",
+        modelo: "COMPRAR",
+        tipo: "APTO",
+        valor: 452525.5,
+        metragem: 230,
+        ehPertoDeMetro: false,
+        temPiscina: true,
+        temChurrasqueira: true,
+        temRuaSilenciosa: true,
+        temAcademia: true,
+        temSalaoDeJogos: false,
+        temPlayground: true,
+        aceitaPET: true,
+        numeroDeVagas: 4,
+        numeroDeQuartos: 5,
+        numeroDeBanheiros: 5,
         cidade: "Osasco",
-        bairro: "rosa",
-        tipo: "studio",
-        quantidadeQuartos: 1,
-        metragem: 43,
-        imagem: "images/mansão-piscina.jpg"
+        estado: "SP",
+        bairro: "fulano",
+        descricao: "descricao tal 2"
+    },
+    {
+        titulo: "Imovel casa sp",
+        modelo: "COMPRAR",
+        tipo: "CASA",
+        valor: 352525.5,
+        metragem: 160,
+        ehPertoDeMetro: true,
+        temPiscina: false,
+        temChurrasqueira: false,
+        temRuaSilenciosa: true,
+        temAcademia: false,
+        temSalaoDeJogos: false,
+        temPlayground: true,
+        aceitaPET: true,
+        numeroDeVagas: 3,
+        numeroDeQuartos: 4,
+        numeroDeBanheiros: 4,
+        cidade: "São Paulo",
+        estado: "SP",
+        bairro: "Azul",
+        descricao: "descricao tal 2"
+    },
+    {
+        titulo: "Imovel ape",
+        modelo: "VENDER",
+        tipo: "APTO",
+        valor: 252525.5,
+        metragem: 85,
+        ehPertoDeMetro: false,
+        temPiscina: false,
+        temChurrasqueira: true,
+        temRuaSilenciosa: false,
+        temAcademia: false,
+        temSalaoDeJogos: false,
+        temPlayground: false,
+        aceitaPET: true,
+        numeroDeVagas: 2,
+        numeroDeQuartos: 3,
+        numeroDeBanheiros: 3,
+        cidade: "São Paulo",
+        estado: "SP",
+        bairro: "Preto",
+        descricao: "descricao tal 2"
     },
 ]
 
-console.log(listaDeImoveisParaComprar);
+// fazer uma tabela
+function montaHtmlDoImovelParaComprar(imovel) {
+  return `<tr>
+                <td> ${imovel.titulo}</td>
+                <td> ${imovel.modelo} </td>
+                <td> ${imovel.tipo} </td>
+                <td> ${formataValorEmReal(imovel.valor)} </td>
+                <td> ${imovel.metragem} </td>
+                <td> ${imovel.ehPertoDeMetro} </td>
+                <td> ${imovel.temPiscina} </td>
+                <td> ${imovel.temChurrasqueira} </td>
+                <td> ${imovel.temRuaSilenciosa} </td>
+                <td> ${imovel.temAcademia} </td>
+                <td> ${imovel.temSalaoDeJogos} </td>
+                <td> ${imovel.temPlayground} </td>
+                <td> ${imovel.aceitaPET} </td>
+                <td> ${imovel.numeroDeVagas} </td>
+                <td> ${imovel.numeroDeQuartos} </td>
+                <td> ${imovel.numeroDeBanheiros} </td>
+                <td> ${imovel.cidade} </td>
+                <td> ${imovel.estado} </td>
+                <td> ${imovel.bairro} </td> 
+                <td> ${imovel.descricao} </td>
+                </tr>`
+}
 
-//transformando obj JS em HTML
+//necessario ajustar tamanho do container para ficar igual a pagina index
 
-function montaHtmlDoImovelParaComprar(imovel){
-    return `<div> 
-                <p> ${imovel.id} </p>
-                <p> ${imovel.cidade} </p>
-                <p> ${imovel.bairro} </p>
-                <p> ${imovel.tipo} </p>
-                <p> ${imovel.quantidadeQuartos} </p>
-                <p> ${imovel.metragem} </p>   
-                <img src="${imovel.imagem}" class="card-img-top" alt="..."> 
-            </div>`
-} 
-//colocando html na pagina 
 
-function colocaHtmlNaPagina(imovel){
+// //colocando html na pagina 
+
+function colocaHtmlNaPagina(imovel) {
     const htmlImovel = montaHtmlDoImovelParaComprar(imovel)
     document.getElementById("lista-de-imoveis").innerHTML += htmlImovel
 }
 
-// colocando no html todos imoveis
+function colocaTabelaNoHtml(imovel) {
+    const htmlTabela = montaTabelaDoImovelNoHtml(imovel)
+    document.getElementById("tabela-head").innerHTML += htmlTabela
+}
 
-function colocaNoHtmlTodosImoveis(listaDeImoveisParaComprar){
-    for (const imovel of listaDeImoveisParaComprar) {
+// // colocando no html todos imoveis
+
+function colocaNoHtmlTodosImoveis(listaDeImoveis) {
+    for (const imovel of listaDeImoveis) {
         colocaHtmlNaPagina(imovel)
-        
+
     }
 }
-colocaNoHtmlTodosImoveis(listaDeImoveisParaComprar)
+colocaNoHtmlTodosImoveis(listaDeImoveis)
 
-// function mostraImovel(listaDeImoveisParaComprar){
-//     console.log(`Imovel de id: ${listaDeImoveisParaComprar[1].id}, na cidade de ${listaDeImoveisParaComprar.cidade}, no bairro ${listaDeImoveisParaComprar.bairro}, de tipo ${listaDeImoveisParaComprar.tipo}, com ${listaDeImoveisParaComprar.quantidadeQuartos} quarto(s) e ${listaDeImoveisParaComprar.metragem} m²`); 
-// }
-// mostraImovel(listaDeImoveisParaComprar)
+
+
+
+// selecionar opção comprar e aparecer na tabela a lista de opções para comprar
+// selecionar a cidade de são paulo e aparecer bairros só de sao paulo (e o mesmo para outras cidades)
+
+function listaDeImoveisParaComprarComFiltroPorCidade(value) {
+    apagaTabela()
+    const listaDeImoveisFiltradoPorCidade = listaDeImoveis.filter(imovel => imovel.cidade == value)
+    colocaNoHtmlTodosImoveis(listaDeImoveisFiltradoPorCidade)
+}
+function listaDeImoveisParaComprarComFiltroPorBairro(value) {
+    apagaTabela()
+    const listaDeImoveisFiltradoPorBairro = listaDeImoveis.filter(imovel => imovel.bairro == value)
+    colocaNoHtmlTodosImoveis(listaDeImoveisFiltradoPorBairro)
+
+}
+function listaDeImoveisParaComprarComFiltroPorNegocio(value) {
+    apagaTabela()
+    const listaDeImoveisFiltradoPorTipoDeNegocio = listaDeImoveis.filter(imovel => imovel.modelo == value)
+    colocaNoHtmlTodosImoveis(listaDeImoveisFiltradoPorTipoDeNegocio)
+}
+
+function formataValorEmReal(valorParaFormatar){
+    return valorParaFormatar.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+}
+
+function apagaTabela(){
+    document.getElementById("lista-de-imoveis").innerHTML = ""
+}
+
+function listaImoveisComPiscina(){
+    apagaTabela()
+    const  checkboxChecked = document.getElementById("tem-piscina-checkbox").checked
+    const listaDeImoveisFiltradoPorPiscina = listaDeImoveis.filter(imovel => imovel.temPiscina == checkboxChecked)
+    colocaNoHtmlTodosImoveis(listaDeImoveisFiltradoPorPiscina)    
+}
+
 
 // coisas para fazer:
-// transformar objeto JS em HTML;
-// colocar HTML na pagina;
-// fazer para lista toda.
 
-// coisas para fazer 2
-// fazer filtro funcionar no html;
-// pegar infos do html
-// fazer funcionar o filtro a partir das infos do html
+// função para alterar o true e false na tabela para sim e não
+// metragem minimo e maximo
+// garagem/quartos/banheiros "2+..3+ etc.." input de int ou select
 
-// lição de casa 
-// fazer uma tabela
+
+// alterar a aparencia da tabela
