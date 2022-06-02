@@ -51,51 +51,130 @@
             <form>
                 <div class="row">
                     <div class="col-md-3">
+                        <div class="text-center" id="lb-comprar">
+                            <label for="lb-comprar">Compra ou Venda</label>
+                        </div>
                         <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg"
-                            style="width: 300px">
-                            <option selected>Escolha sua opção</option>
-                            <option value="1">Comprar</option>
-                            <option value="2">Vender</option>
+                            style="width: 300px" id="opcao-de-negocio"
+                            onchange="listaDeImoveisParaComprarComFiltroPorNegocio(value)">
+                            <option id="seleciona-tipo-acao" selected>Escolha sua opção</option>
+                            <option value="COMPRAR">Comprar</option>
+                            <option value="VENDER">Vender</option>
                         </select>
                     </div>
                     <div class="col-md-3">
+                        <div class="text-center" id="lb-comprar">
+                            <label for="lb-comprar">Cidades</label>
+                        </div>
                         <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg"
-                            style="width: 300px">
-                            <option selected>Cidade</option>
-                            <option value="1">São Paulo</option>
-                            <option value="2">Santos</option>
-                            <option value="2">Santo André</option>
-                            <option value="2">Barueri</option>
-                            <option value="2">Osasco</option>
+                            style="width: 300px" id="opcao-de-cidades"
+                            onchange="listaDeImoveisParaComprarComFiltroPorCidade(value)">
+                            <option id="seleciona-cidade" selected>Escolha uma Cidade</option>
+                            <option value="São Paulo">São Paulo</option>
+                            <option value="Santos">Santos</option>
+                            <option value="Santo André">Santo André</option>
+                            <option value="Barueri">Barueri</option>
+                            <option value="Osasco">Osasco</option>
                         </select>
                     </div>
                     <div class="col-md-3">
-                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg"
+                        <div class="text-center" id="lb-comprar">
+                            <label for="lb-comprar">Bairros</label>
+                        </div>
+                        <select id="seleciona-bairro" class="form-select form-select-lg mb-3" id="opcao-de-bairros"
+                            onchange="listaDeImoveisParaComprarComFiltroPorBairro(value)" aria-label=".form-select-lg"
                             style="width: 300px">
-                            <option selected>Bairro</option>
-                            <option value="1">Azul</option>
-                            <option value="2">Branco</option>
-                            <option value="2">Preto</option>
+                            <option selected>Escolha um Bairro</option>
+                            <option value="Azul">Azul</option>
+                            <option value="Branco">Branco</option>
+                            <option value="Preto">Preto</option>
                         </select>
                     </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" onchange="listaImoveisComPiscina()" id="tem-piscina-checkbox">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Tem piscina
+                        </label>
+                      </div>
                     <div class="col-md-3">
-                        <form>
                             <span>
                                 <form class="d-flex">
+                                    <div class="text-center" id="lb-comprar">
+                                        <label for="lb-comprar">Buscar</label>
+                                    </div>
                                     <input class="form-input form-select-lg mb-3" aria-label=".form-select-lg"
-                                        style="width: 300px type="search" placeholder="Procure o imóvel" aria-label="Search">
+                                        style="width: 300px" type="search" placeholder="Procure o imóvel"
+                                        aria-label="Search">
                                     <button class="botao-search" type="submit">BUSCAR</button>
-                                </form>
                             </span>
                     </div>
                 </div>
             </form>
         </div>
-
-        </div>
         </form>
+    </section>
+    <br>
+    <section>
+        <!-- <div class="container"> -->
+        <table class="table table-hover" border="4">
+            <tr>
+                <thead id="headers-tabela">
+                    <th>Imóvel</th>
+                    <th>Modelo</th>
+                    <th>Tipo</th>
+                    <th>Valor</th>
+                    <th>M²</th>
+                    <th>Metro</th>
+                    <th>Piscina</th>
+                    <th>Churrasqueira</th>
+                    <th>Rua Silenciosa</th>
+                    <th>Academia</th>
+                    <th>Sala de Jogos</th>
+                    <th>Playground</th>
+                    <th>Pet</th>
+                    <th>Garagem</th>
+                    <th>Quartos</th>
+                    <th>Banheiros</th>
+                    <th>Cidade</th>
+                    <th>Estado</th>
+                    <th>Bairro</th>
+                    <th>Descrição</th>
+            </tr>
+            </thead>
+            <tbody id="lista-de-imoveis">
+                <tr>
+                </tr>
+            </tbody>
+        </table>
         </div>
     </section>
     <section>
+        <div class="container">
+            <div class="col-sm-12 col-md-6 col-lg-4" id="tabela-head">
+                <div class="col-sm-12 col-md-6 col-lg-4" id="lista-de-imoveis">
+                </div>
+            </div>
         </div>
     </section>
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">Copyright © Felipe Güths</div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn mx-2" target="_blank" href="https://www.linkedin.com/in/felipeguths/"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="btn mx-2" target="_blank" href="https://www.instagram.com/felipeguths"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a class="external-links" href="http://www.github.com/felipeguths">Designed by Felipe</a>
+                    <a class="external-links" href="http://www.freepik.com">Designed by Danilo</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="JS/comprar.js"></script>
+</body>
+
+</html>
